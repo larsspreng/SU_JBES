@@ -5,8 +5,6 @@ Ability Testing, Journal of Business and Economic Statistics
 """
 import numpy as np
 
-p_i = np.array([0.05, 0.02, 0.1, 0.0])
-
 def pcom_test(p_i,alpha=0.05,r=10):
 
     if type(p_i) != np.ndarray:
