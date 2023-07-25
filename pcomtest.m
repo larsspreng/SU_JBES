@@ -14,11 +14,11 @@ function [P_rn,pval,cval] = pcomtest(p_i,alph,r)
 %   - pval: p-value of test statistic
 %   - cvla: critical value of test statistc
 
-if isempty(alph)
+if nargin <2 || isempty(alph)
     alph = 0.05;
 end
 
-if isempty(r)
+if nargin < 3 || isempty(r)
     r = 10;
 end
 
